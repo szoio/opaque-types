@@ -1,6 +1,7 @@
-@main def hello: Unit = {
-  println("Hello world!")
-  println(msg)
-}
+import io.circe.syntax._
 
-def msg = "I was compiled by Scala 3. :)"
+@main def main: Unit = {
+  val topic = Topic("my-topic", 3, 6)
+
+  println(topic.asJson.spaces2)
+}
