@@ -9,7 +9,6 @@ lazy val root = project
     scalaVersion := scala3Version,
 
     libraryDependencies ++= Seq(
-      "io.circe" %% "circe-generic" % "0.14.3",
-      "org.scalameta" %% "munit" % "0.7.29" % Test
+      "io.circe" %% "circe-generic" % "0.14.3"
     )
   )
